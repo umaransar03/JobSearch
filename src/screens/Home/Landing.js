@@ -23,6 +23,7 @@ export const Landing = () => {
                             display: 'flex',
                             flexDirection: 'column',
                             mt: 2,
+                            mr: {xs: 'auto', md: 15},
                             zIndex: 3,
                             textAlign: 'center',
                             alignItems: 'center',
@@ -34,7 +35,7 @@ export const Landing = () => {
                                 lineHeight: 1.2,
                                 fontFamily: 'Abril Fatface',
                                 fontSize: {xs: 48, md: 68},
-                                mb: 1.2,
+                                mb: 2.2,
                                 ml: {xs: 0, md:4},
                                 textAlign: {xs: 'center', md: 'left'}
                             }}>
@@ -53,7 +54,7 @@ export const Landing = () => {
                             Welcome to JobSearch, your go-to destination for navigating 
                             the ever-evolving job market with ease. Whether you're a recent 
                             graduate embarking on your career journey or a seasoned professional 
-                            seeking new opportunities, JobSearch is your trusted companion. 
+                            seeking new opportunities.
                         </Typography>
                         <Box component='div' 
                         sx={{ 

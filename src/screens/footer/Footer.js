@@ -1,6 +1,10 @@
-import { Container, Typography, Box, Link, TextField, Button } from '@mui/material'
+import { Container, Typography, Box, Link, TextField, Button, } from '@mui/material'
 import React from 'react'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import EmailIcon from '@mui/icons-material/Email';
 
 const customTheme = createTheme({
     palette: {
@@ -81,7 +85,21 @@ export const Footer = () => {
                                     <Link sx={{ textDecoration: 'none', mb: 0.5, mt: 2, fontWeight: 500, color: 'black', ':hover': { color: '#c3073f', transition: '0.3s' }, cursor: 'pointer' }}>Islamabad</Link>
                                     <Link sx={{ textDecoration: 'none', mb: 0.5, fontWeight: 500, color: 'black', ':hover': { color: '#c3073f', transition: '0.3s' }, cursor: 'pointer' }}>Careers</Link>
                                     <Link sx={{ textDecoration: 'none', mb: 0.5, fontWeight: 500, color: 'black', ':hover': { color: '#c3073f', transition: '0.3s' }, cursor: 'pointer' }}>Blog</Link>
-                                    <Link sx={{ textDecoration: 'none', mb: 0.5, color: 'black', fontWeight: 500, ':hover': { color: '#c3073f', transition: '0.3s' }, cursor: 'pointer' }}>Contact</Link>
+                                    <Link sx={{ textDecoration: 'none', mb: 0.5, color: 'black', fontWeight: 500, ':hover': { color: '#c3073f', transition: '0.3s' }, cursor: 'pointer' }}>Mobile</Link>
+                                    <Box 
+                                    sx={{ 
+                                        display: 'flex', 
+                                        gap: 1.5, 
+                                        mt: 1,
+                                        flexDirection: 'row', 
+                                        textAlign: 'left',  
+                                        color: '#333333'
+                                        }}>
+                                        <FacebookIcon sx={{'&:hover': {color: '#c3073f', transition: '0.2s', cursor: 'pointer'}}} />
+                                        <TwitterIcon sx={{'&:hover': {color: '#c3073f', transition: '0.2s', cursor: 'pointer'}}}/>
+                                        <InstagramIcon sx={{'&:hover': {color: '#c3073f', transition: '0.2s', cursor: 'pointer'}}}/>
+                                        <EmailIcon sx={{'&:hover': {color: '#c3073f', transition: '0.2s', cursor: 'pointer'}}} />
+                                    </Box>
                                 </Box>
                             </Box>
                             <Box sx={{ textAlign: 'left', width: { xs: 'auto', md: '30%' }, mt: { xs: 4, md: 0 } }}>
